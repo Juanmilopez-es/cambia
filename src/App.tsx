@@ -5,6 +5,7 @@
 
 import { useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 import { usePlayerStore, useGameStore } from './stores';
 import { Onboarding } from './components/onboarding';
 import { Dashboard } from './components/dashboard';
@@ -41,6 +42,7 @@ function App() {
           </div>
         )}
       </AnimatePresence>
+      <Analytics />
     </div>
   );
 }
